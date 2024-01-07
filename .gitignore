@@ -1,38 +1,33 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# .gitignore for Next.js
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
+# Ignore environment variable files
+.env*
 
-# testing
-/coverage
+# Ignore Next.js build output
+.next/
 
-# next.js
-/.next/
-/out/
+# Ignore serverless build output
+.serverless/
 
-# production
-/build
+# Ignore coverage reports
+coverage/
 
-# misc
-.DS_Store
-*.pem
-.env
-.idea
-
-# debug
+# Ignore npm-debug.log and yarn-debug.log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
+# Ignore .env files containing environment-specific settings
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# vercel
-.vercel
+# Ignore .DS_Store files
+.DS_Store
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Ignore node_modules directory
+node_modules/
+
+# Ignore yarn.lock file
+yarn.lock
